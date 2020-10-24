@@ -1,0 +1,19 @@
+{
+    "features": {
+      "mac_auth_enabled" : {
+          "unsupportedDevices": ["JL635A",
+             "JL636A", "JL363A", "JL365A", "JL366A", "JL367A","JL368A", "JL369A", "JL387A", "JL492A",
+              "JL493A", "JL494A", "JL999A", "8360"]
+           },
+      "dot1x_enabled" : {
+          "unsupportedDevices": ["JL635A",
+             "JL636A", "JL363A", "JL365A", "JL366A", "JL367A","JL368A", "JL369A", "JL387A", "JL492A",
+              "JL493A", "JL494A", "JL999A", "8360"]
+            },
+    "radius_enabled": {
+          "unsupportedDevices": ["JL635A",
+             "JL636A", "JL363A", "JL365A", "JL366A", "JL367A","JL368A", "JL369A", "JL387A", "JL492A",
+              "JL493A", "JL494A", "JL999A", "8360"]
+            }
+          }
+  }

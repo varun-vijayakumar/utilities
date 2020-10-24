@@ -1,0 +1,6 @@
+{
+    "cncs" : ["routed_port", "classifier_acl_v4_routed_in", "classifier_ace_v4_ah_ingress",
+              "classifier_ace_v4_ah_egress", "classifier_ace_esp_egress", "classifier_acl_v4_routed_vlan_out",
+              "classifier_acl_v4_port_in", "classifier_acl_v4_port_out"],
+    "kconfigcncs" : ["dot1x_enabled", "mac_auth_enabled", "radius_enabled", "dhcp_snooping_enabled"]
+}
