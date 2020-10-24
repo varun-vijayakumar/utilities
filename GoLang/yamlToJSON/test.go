@@ -7,8 +7,11 @@ import (
 	//"path/filepath"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
+	"log"
+	"os"
 	"path/filepath"
 	"strconv"
+	"strings"
 )
 
 func check(e error) {
@@ -188,14 +191,7 @@ func main() {
 		}
 		fmt.Println(CnCInfo)
 	*/
-	var c conf
-	c.getConf()
-	fmt.Print(c)
-}
-
-type conf struct {
-	Hits int64 `yaml:"hits"`
-	Time int64 `yaml:"time"`
+	extract()
 }
 
 // InterfaceInfo interface map
@@ -203,9 +199,9 @@ type InterfaceInfo struct {
 	PortInfo map[string]interface{}
 }
 
-func (c *conf) getConf() *conf {
-
-	yamlFile, err := ioutil.ReadFile("ports.yaml")
+func extract() {
+	fmt.Println("Extracting File")
+	yamlFile, err := ioutil.ReadFile("/Users/varunvijayakumar/Desktop/FILES/NESTLE/UTILITIES/GoLang/yamlToJSON/devices/JL636A/ports.yaml")
 	if err != nil {
 		fmt.Printf("yamlFile.Get err   #%v ", err)
 	}
@@ -263,13 +259,21 @@ func (c *conf) getConf() *conf {
 	}
 	//fmt.Print(jsonFile)
 
-	fmt.Printf("jsonFile type : %s\n", reflect.TypeOf(jsonFile))
-	err = ioutil.WriteFile("interface.json", jsonFile, 0644)
-	if err != nil {
-		fmt.Printf("yamlFile.Get err   #%v ", err)
-	}
+	directory := "/Users/varunvijayakumar/Desktop/FILES/NESTLE/UTILITIES/GoLang/yamlToJSON/devices/" + jNumber + "/"
 
-	return c
+	fmt.Printf("jsonFile type : %s\n", reflect.TypeOf(jsonFile))
+	/*	filePathNew := filepath.Clean(fileName)
+
+		err = ioutil.WriteFile(filePathNew, jsonFile, 0755)
+		if err != nil {
+			fmt.Printf("yamlFile.Get err   #%v ", err)
+		}*/
+
+	log.Printf("Directory : %s\n", directory)
+	createAndWriteFile(directory, jsonFile)
+	log.Println("Create File Done")
+	extractFiles(directory)
+	return
 }
 
 func process(value interface{}, portInfo map[string]interface{}) bool {
@@ -326,4 +330,56 @@ func process(value interface{}, portInfo map[string]interface{}) bool {
 		fmt.Printf("%v is unknown \n ", value)
 	}
 	return false
+}
+
+func createAndWriteFile(directory string, data []byte) {
+	if !createDirectory(directory) {
+		return
+	}
+
+	fileName := directory + "/interface.json"
+	err := ioutil.WriteFile(fileName, data, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+func createDirectory(directory string) bool {
+	err := os.MkdirAll(directory, 0755)
+	if err != nil {
+		log.Fatal(err)
+		return false
+	}
+	return true
+}
+
+func extractFiles(directory string) bool {
+	log.Println(directory)
+	files, err := ioutil.ReadDir(directory)
+	if err != nil {
+		log.Fatal(err)
+		return false
+	}
+	for _, f := range files {
+		log.Printf("file format %s", reflect.TypeOf(files))
+
+		fileName := f.Name()
+		if strings.Contains(fileName, ".json") {
+			fileName = directory + fileName
+			log.Printf("fileName : %s\n", fileName)
+			file, err2 := ioutil.ReadFile(fileName)
+			if err2 != nil {
+				log.Fatal("read failed")
+			}
+
+			var intfYamlMap map[string]interface{} = make(map[string]interface{})
+			err = json.Unmarshal(file, &intfYamlMap)
+			if err != nil {
+				fmt.Printf("Unmarshal: %v", err)
+			}
+			log.Println(intfYamlMap)
+		}
+	}
+	return true
 }
