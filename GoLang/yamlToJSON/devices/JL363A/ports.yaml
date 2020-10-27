@@ -1,0 +1,379 @@
+# (c) Copyright 2016-2018,2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+#
+# Port description file for 8400X line module JL363A
+
+# This switch supports 10GbT transceivers only in the first 12 ports.
+# They are allowed in those ports by setting the max power to 2500mW.
+# The rest of the ports have a max power of 2000mW, which will prevent
+# them from enabling a 10GbT transceiver.
+
+manufacturer:    Aruba
+product_name:    8400 32P 10G SFP/SFP+ Msec Adv Mod
+version:         '1'
+
+port_info:
+   number_ports:          32
+   max_port_speed:        10000
+   max_transmission_unit: 9198
+   max_lag_count:         1024
+   max_lag_member_count:  256
+
+ports:
+   -  name:               1
+      switch_device_port: 1
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp1
+
+   -  name:               2
+      switch_device_port: 2
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp2
+
+   -  name:               3
+      switch_device_port: 3
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp3
+
+   -  name:               4
+      switch_device_port: 4
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp4
+
+   -  name:               5
+      switch_device_port: 5
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp5
+
+   -  name:               6
+      switch_device_port: 6
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp6
+
+   -  name:               7
+      switch_device_port: 7
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp7
+
+   -  name:               8
+      switch_device_port: 8
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp8
+
+   -  name:               9
+      switch_device_port: 9
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp9
+
+   -  name:               10
+      switch_device_port: 10
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp10
+
+   -  name:               11
+      switch_device_port: 11
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp11
+
+   -  name:               12
+      switch_device_port: 12
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2500  # milliwatts (2500 to allow 10GbT xcvrs)
+      module_eeprom:      sfpp12
+
+   -  name:               13
+      switch_device_port: 13
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp13
+
+   -  name:               14
+      switch_device_port: 14
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp14
+
+   -  name:               15
+      switch_device_port: 15
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp15
+
+   -  name:               16
+      switch_device_port: 16
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp16
+
+   -  name:               17
+      switch_device_port: 17
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp17
+
+   -  name:               18
+      switch_device_port: 18
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp18
+
+   -  name:               19
+      switch_device_port: 19
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp19
+
+   -  name:               20
+      switch_device_port: 20
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp20
+
+   -  name:               21
+      switch_device_port: 21
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp21
+
+   -  name:               22
+      switch_device_port: 22
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp22
+
+   -  name:               23
+      switch_device_port: 23
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp23
+
+   -  name:               24
+      switch_device_port: 24
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp24
+
+   -  name:               25
+      switch_device_port: 25
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp25
+
+   -  name:               26
+      switch_device_port: 26
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp26
+
+   -  name:               27
+      switch_device_port: 27
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp27
+
+   -  name:               28
+      switch_device_port: 28
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp28
+
+   -  name:               29
+      switch_device_port: 29
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp29
+
+   -  name:               30
+      switch_device_port: 30
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp30
+
+   -  name:               31
+      switch_device_port: 31
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0001
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp31
+
+   -  name:               32
+      switch_device_port: 32
+      pluggable:          True
+      connector:          SFP_PLUS
+      speeds:             [1000, 10000]
+      capabilities:       [macsec]
+      tuning_type:        10GPHY_0002
+      transceiver_bay_type:  SFP_1G_10G_CORE_wEDC
+      pm_max_power:       2000  # milliwatts
+      module_eeprom:      sfpp32

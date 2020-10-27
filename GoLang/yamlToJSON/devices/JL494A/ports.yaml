@@ -1,0 +1,461 @@
+# (c) Copyright 2017-2018,2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+#
+# Ports description file for 8400S line card, JL494A
+
+# THIS FILE IS NOT COMPLETE. IT IS A PLACE HOLDER WITH AVAILABLE INFORMATION.
+# WHEN THIS COMMENT IS REMOVED, IT MEANS THE FILE IS COMPLETE.
+
+manufacturer:    HPE
+product_name:    8400 12P 40G/100G QSFP28 Adv Mod
+version:         '1'
+
+port_info:
+    number_ports:    12
+    max_port_speed:  100000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+#  Note: We will need PHY information for future switches
+#        Should include an array of PHY descriptors
+#        and add info to port indicating the associated PHY
+
+ports:
+   -  name:        1
+      switch_device:      0
+      switch_device_port: 44 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp1
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        2
+      switch_device:      0
+      switch_device_port: 40 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp2
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        3
+      switch_device:      0
+      switch_device_port: 32 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp3
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        4
+      switch_device:      0
+      switch_device_port: 36 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp4
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        5
+      switch_device:      0
+      switch_device_port: 28 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp5
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        6
+      switch_device:      0
+      switch_device_port: 24 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp6
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        7
+      switch_device:      0
+      switch_device_port: 0 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp7
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        8
+      switch_device:      0
+      switch_device_port: 4 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp8
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        9
+      switch_device:      0
+      switch_device_port: 12 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp9
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        10
+      switch_device:      0
+      switch_device_port: 8 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp10
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        11
+      switch_device:      0
+      switch_device_port: 16 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp11
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative
+
+   -  name:        12
+      switch_device:      0
+      switch_device_port: 20 # Chip port
+      pluggable:          True
+      connector:          QSFP28
+      max_speed:          100000
+      speeds:             [40000, 100000]  # supported speeds in Mb/S
+      tuning_type:        100G_0001
+      transceiver_bay_type:  QSFP_40G_100G_CORE
+      pm_max_power:       5000  # max xcvr power in milliwatts
+      module_eeprom:      qsfp12
+      module_signals:         # device - hex address - bit mask
+           sfpp_reset:
+               device:     cpld3
+               register:   0x15
+               bitmask:    0x01
+           sfpp_mod_present:
+               device:     cpld3
+               register:   0x14
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_int:
+               device:     cpld3
+               register:   0x13
+               bitmask:    0x01
+               polarity:   negative
+           sfpp_lp_mode:
+               device:     cpld3
+               register:   0x16
+               bitmask:    0x01
+           sfpp_interrupt:
+               device:     cpld3
+               register:   0x12
+               bitmask:    0x01
+               polarity:   negative

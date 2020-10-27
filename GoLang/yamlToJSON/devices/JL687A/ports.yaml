@@ -1,0 +1,406 @@
+# (c) Copyright 2019-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+#
+# Port description file for 8400X line module JL687A
+
+manufacturer:    Aruba
+product_name:    8400X-32Y Module
+version:         '1'
+
+port_info:
+   number_ports:          32
+   max_port_speed:        25000
+   max_transmission_unit: 9198
+   max_lag_count:         1024
+   max_lag_member_count:  256
+
+ports:
+   -  name:               1
+      switch_device_port: 1
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      capabilities:       [1g_non_standard]
+      speed_group:        1
+      tuning_type:        25G_0001
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp1
+
+   -  name:               2
+      switch_device_port: 2
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        1
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0002
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp2
+
+   -  name:               3
+      switch_device_port: 3
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        1
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0003
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp3
+
+   -  name:               4
+      switch_device_port: 4
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        1
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0004
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp4
+
+   -  name:               5
+      switch_device_port: 5
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        2
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0005
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp5
+
+   -  name:               6
+      switch_device_port: 6
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        2
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0006
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp6
+
+   -  name:               7
+      switch_device_port: 7
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        2
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0007
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp7
+
+   -  name:               8
+      switch_device_port: 8
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        2
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0008
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp8
+
+   -  name:               9
+      switch_device_port: 9
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        3
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0009
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp9
+
+   -  name:               10
+      switch_device_port: 10
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        3
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0010
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp10
+
+   -  name:               11
+      switch_device_port: 11
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        3
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0011
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp11
+
+   -  name:               12
+      switch_device_port: 12
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        3
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0012
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp12
+
+   -  name:               13
+      switch_device_port: 13
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        4
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0013
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp13
+
+   -  name:               14
+      switch_device_port: 14
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        4
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0014
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp14
+
+   -  name:               15
+      switch_device_port: 15
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        4
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0015
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp15
+
+   -  name:               16
+      switch_device_port: 16
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        4
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0016
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp16
+
+   -  name:               17
+      switch_device_port: 17
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        5
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0017
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp17
+
+   -  name:               18
+      switch_device_port: 18
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        5
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0018
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp18
+
+   -  name:               19
+      switch_device_port: 19
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        5
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0019
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp19
+
+   -  name:               20
+      switch_device_port: 20
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        5
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0020
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp20
+
+   -  name:               21
+      switch_device_port: 21
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        6
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0021
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp21
+
+   -  name:               22
+      switch_device_port: 22
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        6
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0022
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp22
+
+   -  name:               23
+      switch_device_port: 23
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        6
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0023
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp23
+
+   -  name:               24
+      switch_device_port: 24
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        6
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0024
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp24
+
+   -  name:               25
+      switch_device_port: 25
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        7
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0025
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp25
+
+   -  name:               26
+      switch_device_port: 26
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        7
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0026
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp26
+
+   -  name:               27
+      switch_device_port: 27
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        7
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0027
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp27
+
+   -  name:               28
+      switch_device_port: 28
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        7
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0028
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp28
+
+   -  name:               29
+      switch_device_port: 29
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        8
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0029
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp29
+
+   -  name:               30
+      switch_device_port: 30
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        8
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0030
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp30
+
+   -  name:               31
+      switch_device_port: 31
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        8
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0031
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp31
+
+   -  name:               32
+      switch_device_port: 32
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [1000, 10000, 25000]
+      speed_group:        8
+      capabilities:       [1g_non_standard]
+      tuning_type:        25G_0032
+      transceiver_bay_type:  SFP_1G_10G_25G_CORE
+      pm_max_power:       2500
+      module_eeprom:      sfpp32

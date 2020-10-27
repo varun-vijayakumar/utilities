@@ -1,0 +1,836 @@
+# Copyright (C) 2019-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+#
+# Port Description File for 6200 Fixed SKU JL727A
+
+manufacturer:    Aruba
+product_name:    6200F 48G CL4 4SFP+370W Swch
+version:         '1'
+
+port_info:
+    number_ports:          52
+    max_port_speed:        10000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+
+ports:
+    -  name:               1
+       switch_device_port: 1
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               2
+       switch_device_port: 0
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               3
+       switch_device_port: 3
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               4
+       switch_device_port: 2
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               5
+       switch_device_port: 5
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               6
+       switch_device_port: 4
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               7
+       switch_device_port: 7
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               8
+       switch_device_port: 6
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               9
+       switch_device_port: 9
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               10
+       switch_device_port: 8
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               11
+       switch_device_port: 11
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               12
+       switch_device_port: 10
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               13
+       switch_device_port: 13
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               14
+       switch_device_port: 12
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+
+    -  name:               15
+       switch_device_port: 15
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               16
+       switch_device_port: 14
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               17
+       switch_device_port: 17
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               18
+       switch_device_port: 16
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               19
+       switch_device_port: 19
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               20
+       switch_device_port: 18
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               21
+       switch_device_port: 21
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               22
+       switch_device_port: 20
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               23
+       switch_device_port: 23
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               24
+       switch_device_port: 22
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               25
+       switch_device_port: 25
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               26
+       switch_device_port: 24
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               27
+       switch_device_port: 27
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               28
+       switch_device_port: 26
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               29
+       switch_device_port: 29
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               30
+       switch_device_port: 28
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               31
+       switch_device_port: 31
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               32
+       switch_device_port: 30
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               33
+       switch_device_port: 33
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               34
+       switch_device_port: 32
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               35
+       switch_device_port: 35
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               36
+       switch_device_port: 34
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               37
+       switch_device_port: 37
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               38
+       switch_device_port: 36
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               39
+       switch_device_port: 39
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               40
+       switch_device_port: 38
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               41
+       switch_device_port: 41
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               42
+       switch_device_port: 40
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               43
+       switch_device_port: 43
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               44
+       switch_device_port: 42
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               45
+       switch_device_port: 45
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               46
+       switch_device_port: 44
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               47
+       switch_device_port: 47
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               48
+       switch_device_port: 46
+       connector:          RJ45
+       description:        1GbT
+       speeds:             [10, 100, 1000]
+       eee_wake_time_range:
+         - pmd_type:       100BASE_TX
+           tx_default:     36
+           tx_min:         36
+           tx_max:         83
+         - pmd_type:       1GBASE_T
+           tx_default:     17
+           tx_min:         17
+           tx_max:         33
+       capabilities:       [cable_diagnostics, poe_plus_power, internal_prbs_loopback, speed_downshift, eee]
+
+    -  name:               49
+       switch_device_port: 48
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [1000, 10000]
+       tuning_type:        6200_10G_0001
+       transceiver_bay_type:  SFP_1G_10G_ACCESS
+       pm_max_power:       3000
+       module_eeprom:      sfpp49
+       capabilities:       [vsf]
+
+    -  name:               50
+       switch_device_port: 49
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [1000, 10000]
+       tuning_type:        6200_10G_0001
+       transceiver_bay_type:  SFP_1G_10G_ACCESS
+       pm_max_power:       3000
+       module_eeprom:      sfpp50
+       capabilities:       [vsf]
+
+    -  name:               51
+       switch_device_port: 50
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [1000, 10000]
+       tuning_type:        6200_10G_0001
+       transceiver_bay_type:  SFP_1G_10G_ACCESS
+       pm_max_power:       3000
+       module_eeprom:      sfpp51
+       capabilities:       [vsf]
+
+    -  name:               52
+       switch_device_port: 51
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [1000, 10000]
+       tuning_type:        6200_10G_0001
+       transceiver_bay_type:  SFP_1G_10G_ACCESS
+       pm_max_power:       3000
+       module_eeprom:      sfpp52
+       capabilities:       [vsf]

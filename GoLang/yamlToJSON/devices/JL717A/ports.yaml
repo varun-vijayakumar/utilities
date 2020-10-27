@@ -1,0 +1,524 @@
+# (c) Copyright 2019-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+#
+# Port Description File for 8360 Fixed SKU JL717A
+
+manufacturer:    Aruba
+product_name:    8360-32Y4C switch
+version:         '1'
+
+port_info:
+    number_ports:          48
+    max_port_speed:        100000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+
+ports:
+    -  name:               1
+       switch_device_port: 47
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       capabilities:       [macsec, macsec_gcm_aes_256, macsec_gcm_aes_xpn_128, macsec_gcm_aes_xpn_256, macsec_integrity_check_only, macsec_confidentiality_0, macsec_confidentiality_30_50, internal_prbs_loopback]
+       speed_group:        1
+       tuning_type:        8360_25GPHY_0001
+       transceiver_bay_type: SFP_10G_25G_DC
+       pm_max_power:       2500
+       module_eeprom:      sfpp1
+
+    -  name:               2
+       switch_device_port: 46
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       capabilities:       [macsec, macsec_gcm_aes_256, macsec_gcm_aes_xpn_128, macsec_gcm_aes_xpn_256, macsec_integrity_check_only, macsec_confidentiality_0, macsec_confidentiality_30_50, internal_prbs_loopback]
+       speed_group:        1
+       tuning_type:        8360_25GPHY_0001
+       transceiver_bay_type: SFP_10G_25G_DC
+       pm_max_power:       2500
+       module_eeprom:      sfpp2
+
+    -  name:               3
+       switch_device_port: 45
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       capabilities:       [macsec, macsec_gcm_aes_256, macsec_gcm_aes_xpn_128, macsec_gcm_aes_xpn_256, macsec_integrity_check_only, macsec_confidentiality_0, macsec_confidentiality_30_50, internal_prbs_loopback]
+       speed_group:        1
+       tuning_type:        8360_25GPHY_0001
+       transceiver_bay_type: SFP_10G_25G_DC
+       pm_max_power:       2500
+       module_eeprom:      sfpp3
+
+    -  name:               4
+       switch_device_port: 44
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       capabilities:       [macsec, macsec_gcm_aes_256, macsec_gcm_aes_xpn_128, macsec_gcm_aes_xpn_256, macsec_integrity_check_only, macsec_confidentiality_0, macsec_confidentiality_30_50, internal_prbs_loopback]
+       speed_group:        1
+       tuning_type:        8360_25GPHY_0001
+       transceiver_bay_type: SFP_10G_25G_DC
+       pm_max_power:       2500
+       module_eeprom:      sfpp4
+
+    -  name:               5
+       switch_device_port: 43
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0005
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp5
+
+    -  name:               6
+       switch_device_port: 42
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0005
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp6
+
+    -  name:               7
+       switch_device_port: 41
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp7
+
+    -  name:               8
+       switch_device_port: 40
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp8
+
+    -  name:               9
+       switch_device_port: 39
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0002
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp9
+
+    -  name:               10
+       switch_device_port: 38
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0002
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp10
+
+    -  name:               11
+       switch_device_port: 37
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0002
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp11
+
+    -  name:               12
+       switch_device_port: 36
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0002
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp12
+
+    -  name:               13
+       switch_device_port: 35
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp13
+
+    -  name:               14
+       switch_device_port: 34
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp14
+
+    -  name:               15
+       switch_device_port: 33
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp15
+
+    -  name:               16
+       switch_device_port: 32
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp16
+
+    -  name:               17
+       switch_device_port: 31
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp17
+
+    -  name:               18
+       switch_device_port: 30
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp18
+
+    -  name:               19
+       switch_device_port: 29
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0003
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp19
+
+    -  name:               20
+       switch_device_port: 28
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp20
+
+    -  name:               21
+       switch_device_port: 27
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp21
+
+    -  name:               22
+       switch_device_port: 26
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp22
+
+    -  name:               23
+       switch_device_port: 25
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp23
+
+    -  name:               24
+       switch_device_port: 24
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp24
+
+    -  name:               25
+       switch_device_port: 1
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp25
+
+    -  name:               26
+       switch_device_port: 0
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp26
+
+    -  name:               27
+       switch_device_port: 3
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0004
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp27
+
+    -  name:               28
+       switch_device_port: 2
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp28
+
+    -  name:               29
+       switch_device_port: 5
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp29
+
+    -  name:               30
+       switch_device_port: 4
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp30
+
+    -  name:               31
+       switch_device_port: 7
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp31
+
+    -  name:               32
+       switch_device_port: 6
+       pluggable:          True
+       connector:          SFP28
+       speeds:             [1000, 10000, 25000]
+       tuning_type:        8360_25G_0001
+       transceiver_bay_type: SFP_1G_10G_25G_DC_LITE
+       pm_max_power:       2500
+       module_eeprom:      sfpp32
+
+    -  name:               33
+       switch_device_port: 12
+       pluggable:          True
+       connector:          QSFP28
+       subports:           [33:1, 33:2, 33:3, 33:4]
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_LITE
+       pm_max_power:       5000
+       module_eeprom:      qsfp1
+    -  name:               33:1
+       parent_port:        33
+       child_number:       1
+       pluggable:          True
+       switch_device_port: 15
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               33:2
+       parent_port:        33
+       child_number:       2
+       pluggable:          True
+       switch_device_port: 13
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               33:3
+       parent_port:        33
+       child_number:       3
+       pluggable:          True
+       switch_device_port: 14
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               33:4
+       parent_port:        33
+       child_number:       4
+       pluggable:          True
+       switch_device_port: 12
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+
+    -  name:               34
+       switch_device_port: 8
+       pluggable:          True
+       connector:          QSFP28
+       subports:           [34:1, 34:2, 34:3, 34:4]
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_LITE
+       pm_max_power:       5000
+       module_eeprom:      qsfp2
+    -  name:               34:1
+       parent_port:        34
+       child_number:       1
+       pluggable:          True
+       switch_device_port: 8
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               34:2
+       parent_port:        34
+       child_number:       2
+       pluggable:          True
+       switch_device_port: 10
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               34:3
+       parent_port:        34
+       child_number:       3
+       pluggable:          True
+       switch_device_port: 9
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               34:4
+       parent_port:        34
+       child_number:       4
+       pluggable:          True
+       switch_device_port: 11
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+
+    -  name:               35
+       switch_device_port: 16
+       pluggable:          True
+       connector:          QSFP28
+       subports:           [35:1, 35:2, 35:3, 35:4]
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_LITE
+       pm_max_power:       5000
+       module_eeprom:      qsfp3
+    -  name:               35:1
+       parent_port:        35
+       child_number:       1
+       pluggable:          True
+       switch_device_port: 16
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               35:2
+       parent_port:        35
+       child_number:       2
+       pluggable:          True
+       switch_device_port: 18
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               35:3
+       parent_port:        35
+       child_number:       3
+       pluggable:          True
+       switch_device_port: 17
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               35:4
+       parent_port:        35
+       child_number:       4
+       pluggable:          True
+       switch_device_port: 19
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+
+    -  name:               36
+       switch_device_port: 20
+       pluggable:          True
+       connector:          QSFP28
+       subports:           [36:1, 36:2, 36:3, 36:4]
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_LITE
+       pm_max_power:       5000
+       module_eeprom:      qsfp4
+    -  name:               36:1
+       parent_port:        36
+       child_number:       1
+       pluggable:          True
+       switch_device_port: 23
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               36:2
+       parent_port:        36
+       child_number:       2
+       pluggable:          True
+       switch_device_port: 21
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               36:3
+       parent_port:        36
+       child_number:       3
+       pluggable:          True
+       switch_device_port: 22
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+    -  name:               36:4
+       parent_port:        36
+       child_number:       4
+       pluggable:          True
+       switch_device_port: 20
+       connector:          SFP28
+       speeds:             [10000, 25000]
+       tuning_type:        8360_100G_0001
+

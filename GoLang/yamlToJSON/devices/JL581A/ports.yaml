@@ -1,0 +1,756 @@
+# (c) Copyright 2018-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+
+# Port description file for the Aruba 8320B switch JL581A
+
+manufacturer:    Aruba
+product_name:    8320
+version:         '1'
+
+port_info:
+    number_ports:          78
+    max_port_speed:        40000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+
+ports:
+    -  name:               1
+       switch_device_port: 1
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port01_tuning
+
+    -  name:               2
+       switch_device_port: 2
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port02_tuning
+
+    -  name:               3
+       switch_device_port: 3
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port03_tuning
+
+    -  name:               4
+       switch_device_port: 4
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port04_tuning
+
+    -  name:               5
+       switch_device_port: 5
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port05_tuning
+
+    -  name:               6
+       switch_device_port: 6
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port06_tuning
+
+    -  name:               7
+       switch_device_port: 7
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port07_tuning
+
+    -  name:               8
+       switch_device_port: 8
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port08_tuning
+
+    -  name:               9
+       switch_device_port: 9
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port09_tuning
+
+    -  name:               10
+       switch_device_port: 10
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port10_tuning
+
+    -  name:               11
+       switch_device_port: 11
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port11_tuning
+
+    -  name:               12
+       switch_device_port: 12
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port12_tuning
+
+    -  name:               13
+       switch_device_port: 13
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port13_tuning
+
+    -  name:               14
+       switch_device_port: 14
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port14_tuning
+
+    -  name:               15
+       switch_device_port: 15
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port15_tuning
+
+    -  name:               16
+       switch_device_port: 16
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port16_tuning
+
+    -  name:               17
+       switch_device_port: 17
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port17_tuning
+
+    -  name:               18
+       switch_device_port: 18
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port18_tuning
+
+    -  name:               19
+       switch_device_port: 19
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port19_tuning
+
+    -  name:               20
+       switch_device_port: 20
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port20_tuning
+
+    -  name:               21
+       switch_device_port: 21
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port21_tuning
+
+    -  name:               22
+       switch_device_port: 22
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port22_tuning
+
+    -  name:               23
+       switch_device_port: 23
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port23_tuning
+
+    -  name:               24
+       switch_device_port: 24
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port24_tuning
+
+    -  name:               25
+       switch_device_port: 25
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port25_tuning
+
+    -  name:               26
+       switch_device_port: 26
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port26_tuning
+
+    -  name:               27
+       switch_device_port: 27
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port27_tuning
+
+    -  name:               28
+       switch_device_port: 28
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port28_tuning
+
+    -  name:               29
+       switch_device_port: 29
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port29_tuning
+
+    -  name:               30
+       switch_device_port: 30
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port30_tuning
+
+    -  name:               31
+       switch_device_port: 31
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port31_tuning
+
+    -  name:               32
+       switch_device_port: 32
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port32_tuning
+
+    -  name:               33
+       switch_device_port: 33
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port33_tuning
+
+    -  name:               34
+       switch_device_port: 34
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port34_tuning
+
+    -  name:               35
+       switch_device_port: 35
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port35_tuning
+
+    -  name:               36
+       switch_device_port: 36
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port36_tuning
+
+    -  name:               37
+       switch_device_port: 37
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port37_tuning
+
+    -  name:               38
+       switch_device_port: 38
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port38_tuning
+
+    -  name:               39
+       switch_device_port: 39
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port39_tuning
+
+    -  name:               40
+       switch_device_port: 40
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port40_tuning
+
+    -  name:               41
+       switch_device_port: 41
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port41_tuning
+
+    -  name:               42
+       switch_device_port: 42
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port42_tuning
+
+    -  name:               43
+       switch_device_port: 43
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port43_tuning
+
+    -  name:               44
+       switch_device_port: 44
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port44_tuning
+
+    -  name:               45
+       switch_device_port: 45
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port45_tuning
+
+    -  name:               46
+       switch_device_port: 46
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port46_tuning
+
+    -  name:               47
+       switch_device_port: 47
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port47_tuning
+
+    -  name:               48
+       switch_device_port: 48
+       connector:          RJ45_10G
+       description:        10GbT
+       speeds:             [1000,10000]
+       tuning_type:        BS_port48_tuning
+
+    -  name:               49
+       switch_device_port: 49
+       pluggable:          True
+       connector:          QSFP_PLUS
+       speeds:             [40000]
+       subports:           [49:1,49:2,49:3,49:4]
+       tuning_type:        BS_port49_tuning
+       transceiver_bay_type:  QSFP_40G_DC
+       pm_max_power:       3500
+       module_eeprom:      qsfpp49
+       module_signals:
+            qsfpp_reset:
+                device:     cpld1
+                register:   0x23
+                bitmask:    0x01
+                polarity:   negative
+            qsfpp_mod_present:
+                device:     cpld1
+                register:   0x22
+                bitmask:    0x01
+                polarity:   negative
+            qsfpp_int:
+                device:     cpld1
+                register:   0x21
+                bitmask:    0x01
+                polarity:   negative
+            qsfpp_lp_mode:
+                device:     cpld1
+                register:   0x24
+                bitmask:    0x01
+            qsfpp_interrupt:
+                device:     cpld1
+                register:   0x20
+                bitmask:    0x01
+    -  name:               49:1
+       switch_device_port: 49
+       parent_port:        49
+       child_number:       1
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port49_tuning
+    -  name:               49:2
+       switch_device_port: 50
+       parent_port:        49
+       child_number:       2
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port49_tuning
+    -  name:               49:3
+       switch_device_port: 51
+       parent_port:        49
+       child_number:       3
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port49_tuning
+    -  name:               49:4
+       switch_device_port: 52
+       parent_port:        49
+       child_number:       4
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port49_tuning
+
+    -  name:               50
+       switch_device_port: 57
+       pluggable:          True
+       connector:          QSFP_PLUS
+       speeds:             [40000]
+       subports:           [50:1,50:2,50:3,50:4]
+       tuning_type:        BS_port50_tuning
+       transceiver_bay_type:  QSFP_40G_DC
+       pm_max_power:       3500
+       module_eeprom:      qsfpp50
+       module_signals:
+            qsfpp_reset:
+                device:     cpld1
+                register:   0x23
+                bitmask:    0x02
+                polarity:   negative
+            qsfpp_mod_present:
+                device:     cpld1
+                register:   0x22
+                bitmask:    0x02
+                polarity:   negative
+            qsfpp_int:
+                device:     cpld1
+                register:   0x21
+                bitmask:    0x02
+            qsfpp_lp_mode:
+                device:     cpld1
+                register:   0x24
+                bitmask:    0x02
+            qsfpp_interrupt:
+                device:     cpld1
+                register:   0x20
+                bitmask:    0x02
+    -  name:               50:1
+       switch_device_port: 57
+       parent_port:        50
+       child_number:       1
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port50_tuning
+    -  name:               50:2
+       switch_device_port: 58
+       parent_port:        50
+       child_number:       2
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port50_tuning
+    -  name:               50:3
+       switch_device_port: 59
+       parent_port:        50
+       child_number:       3
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port50_tuning
+    -  name:               50:4
+       switch_device_port: 60
+       parent_port:        50
+       child_number:       4
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port50_tuning
+
+    -  name:               51
+       switch_device_port: 69
+       pluggable:          True
+       connector:          QSFP_PLUS
+       speeds:             [40000]
+       subports:           [51:1,51:2,51:3,51:4]
+       tuning_type:        BS_port51_tuning
+       transceiver_bay_type:  QSFP_40G_DC
+       pm_max_power:       3500
+       module_eeprom:      qsfpp51
+       module_signals:
+            qsfpp_reset:
+                device:     cpld1
+                register:   0x23
+                bitmask:    0x04
+                polarity:   negative
+            qsfpp_mod_present:
+                device:     cpld1
+                register:   0x22
+                bitmask:    0x04
+                polarity:   negative
+            qsfpp_int:
+                device:     cpld1
+                register:   0x21
+                bitmask:    0x04
+            qsfpp_lp_mode:
+                device:     cpld1
+                register:   0x24
+                bitmask:    0x04
+            qsfpp_interrupt:
+                device:     cpld1
+                register:   0x20
+                bitmask:    0x04
+    -  name:               51:1
+       switch_device_port: 69
+       parent_port:        51
+       child_number:       1
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port51_tuning
+    -  name:               51:2
+       switch_device_port: 70
+       parent_port:        51
+       child_number:       2
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port51_tuning
+    -  name:               51:3
+       switch_device_port: 71
+       parent_port:        51
+       child_number:       3
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port51_tuning
+    -  name:               51:4
+       switch_device_port: 72
+       parent_port:        51
+       child_number:       4
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port51_tuning
+
+    -  name:               52
+       switch_device_port: 53
+       pluggable:          True
+       connector:          QSFP_PLUS
+       speeds:             [40000]
+       subports:           [52:1,52:2,52:3,52:4]
+       tuning_type:        BS_port52_tuning
+       transceiver_bay_type:  QSFP_40G_DC
+       pm_max_power:       3500
+       module_eeprom:      qsfpp52
+       module_signals:
+            qsfpp_reset:
+                device:     cpld1
+                register:   0x23
+                bitmask:    0x08
+                polarity:   negative
+            qsfpp_mod_present:
+                device:     cpld1
+                register:   0x22
+                bitmask:    0x08
+                polarity:   negative
+            qsfpp_int:
+                device:     cpld1
+                register:   0x21
+                bitmask:    0x08
+            qsfpp_lp_mode:
+                device:     cpld1
+                register:   0x24
+                bitmask:    0x08
+            qsfpp_interrupt:
+                device:     cpld1
+                register:   0x20
+                bitmask:    0x08
+    -  name:               52:1
+       switch_device_port: 53
+       parent_port:        52
+       child_number:       1
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port52_tuning
+    -  name:               52:2
+       switch_device_port: 54
+       parent_port:        52
+       child_number:       2
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port52_tuning
+    -  name:               52:3
+       switch_device_port: 55
+       parent_port:        52
+       child_number:       3
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port52_tuning
+    -  name:               52:4
+       switch_device_port: 56
+       parent_port:        52
+       child_number:       4
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port52_tuning
+
+    -  name:               53
+       switch_device_port: 61
+       pluggable:          True
+       connector:          QSFP_PLUS
+       speeds:             [40000]
+       subports:           [53:1,53:2,53:3,53:4]
+       tuning_type:        BS_port53_tuning
+       transceiver_bay_type:  QSFP_40G_DC
+       pm_max_power:       3500
+       module_eeprom:      qsfpp53
+       module_signals:
+            qsfpp_reset:
+                device:     cpld1
+                register:   0x23
+                bitmask:    0x10
+                polarity:   negative
+            qsfpp_mod_present:
+                device:     cpld1
+                register:   0x22
+                bitmask:    0x10
+                polarity:   negative
+            qsfpp_int:
+                device:     cpld1
+                register:   0x21
+                bitmask:    0x10
+            qsfpp_lp_mode:
+                device:     cpld1
+                register:   0x24
+                bitmask:    0x10
+            qsfpp_interrupt:
+                device:     cpld1
+                register:   0x20
+                bitmask:    0x10
+    -  name:               53:1
+       switch_device_port: 61
+       parent_port:        53
+       child_number:       1
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port53_tuning
+    -  name:               53:2
+       switch_device_port: 62
+       parent_port:        53
+       child_number:       2
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port53_tuning
+    -  name:               53:3
+       switch_device_port: 63
+       parent_port:        53
+       child_number:       3
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port53_tuning
+    -  name:               53:4
+       switch_device_port: 64
+       parent_port:        53
+       child_number:       4
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port53_tuning
+
+    -  name:               54
+       switch_device_port: 65
+       pluggable:          True
+       connector:          QSFP_PLUS
+       speeds:             [40000]
+       subports:           [54:1,54:2,54:3,54:4]
+       tuning_type:        BS_port54_tuning
+       transceiver_bay_type:  QSFP_40G_DC
+       pm_max_power:       3500
+       module_eeprom:      qsfpp54
+       module_signals:
+            qsfpp_reset:
+                device:     cpld1
+                register:   0x23
+                bitmask:    0x20
+                polarity:   negative
+            qsfpp_mod_present:
+                device:     cpld1
+                register:   0x22
+                bitmask:    0x20
+                polarity:   negative
+            qsfpp_int:
+                device:     cpld1
+                register:   0x21
+                bitmask:    0x20
+            qsfpp_lp_mode:
+                device:     cpld1
+                register:   0x24
+                bitmask:    0x20
+            qsfpp_interrupt:
+                device:     cpld1
+                register:   0x20
+                bitmask:    0x20
+    -  name:               54:1
+       switch_device_port: 65
+       parent_port:        54
+       child_number:       1
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port54_tuning
+    -  name:               54:2
+       switch_device_port: 66
+       parent_port:        54
+       child_number:       2
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port54_tuning
+    -  name:               54:3
+       switch_device_port: 67
+       parent_port:        54
+       child_number:       3
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port54_tuning
+    -  name:               54:4
+       switch_device_port: 68
+       parent_port:        54
+       child_number:       4
+       pluggable:          True
+       connector:          SFP_PLUS
+       speeds:             [10000]
+       tuning_type:        BS_port54_tuning

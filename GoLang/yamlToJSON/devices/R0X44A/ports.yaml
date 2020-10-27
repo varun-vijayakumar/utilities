@@ -1,0 +1,522 @@
+# (c) Copyright 2018-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential to the
+# Hewlett Packard Enterprise Development LP.  No part of this program
+# may be photocopied, reproduced, or translated into another programming
+# language without prior written consent of the Hewlett Packard
+# Enterprise Development LP.
+
+# Ports description file for Aruba 6400 line module R0X44A
+
+manufacturer:    Aruba
+product_name:    6400 48p 10G/25G SFP28 Mod
+version:         '1'
+
+port_info:
+    number_ports:          48
+    max_port_speed:        25000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+
+ports:
+   -  name:               1
+      switch_device_port: 47
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp1
+      capabilities:       [internal_prbs_loopback]
+
+
+   -  name:               2
+      switch_device_port: 46
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp2
+      capabilities:       [internal_prbs_loopback]
+
+
+   -  name:               3
+      switch_device_port: 45
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp3
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               4
+      switch_device_port: 44
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp4
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               5
+      switch_device_port: 43
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp5
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               6
+      switch_device_port: 42
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp6
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               7
+      switch_device_port: 35
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp7
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               8
+      switch_device_port: 34
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp8
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               9
+      switch_device_port: 41
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp9
+
+   -  name:               10
+      switch_device_port: 40
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp10
+
+   -  name:               11
+      switch_device_port: 33
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp11
+
+   -  name:               12
+      switch_device_port: 32
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp12
+
+   -  name:               13
+      switch_device_port: 39
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp13
+
+   -  name:               14
+      switch_device_port: 38
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp14
+
+   -  name:               15
+      switch_device_port: 37
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0003
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp15
+
+   -  name:               16
+      switch_device_port: 36
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0003
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp16
+
+   -  name:               17
+      switch_device_port: 31
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp17
+
+   -  name:               18
+      switch_device_port: 30
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp18
+
+   -  name:               19
+      switch_device_port: 29
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp19
+
+   -  name:               20
+      switch_device_port: 28
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp20
+
+   -  name:               21
+      switch_device_port: 27
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp21
+
+   -  name:               22
+      switch_device_port: 26
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp22
+
+   -  name:               23
+      switch_device_port: 25
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp23
+
+   -  name:               24
+      switch_device_port: 24
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp24
+
+   -  name:               25
+      switch_device_port: 1
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp25
+
+   -  name:               26
+      switch_device_port: 0
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp26
+
+   -  name:               27
+      switch_device_port: 3
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp27
+
+   -  name:               28
+      switch_device_port: 2
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0003
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp28
+
+   -  name:               29
+      switch_device_port: 5
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp29
+
+   -  name:               30
+      switch_device_port: 4
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0003
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp30
+
+   -  name:               31
+      switch_device_port: 7
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0004
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp31
+
+   -  name:               32
+      switch_device_port: 6
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0003
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp32
+
+   -  name:               33
+      switch_device_port: 9
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0005
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp33
+
+   -  name:               34
+      switch_device_port: 8
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0005
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp34
+
+   -  name:               35
+      switch_device_port: 11
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp35
+
+   -  name:               36
+      switch_device_port: 10
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp36
+
+   -  name:               37
+      switch_device_port: 13
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp37
+
+   -  name:               38
+      switch_device_port: 12
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp38
+
+   -  name:               39
+      switch_device_port: 15
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp39
+
+   -  name:               40
+      switch_device_port: 14
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25G_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp40
+
+   -  name:               41
+      switch_device_port: 17
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp41
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               42
+      switch_device_port: 16
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp42
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               43
+      switch_device_port: 21
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp43
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               44
+      switch_device_port: 20
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp44
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               45
+      switch_device_port: 19
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp45
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               46
+      switch_device_port: 18
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp46
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               47
+      switch_device_port: 23
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0001
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp47
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               48
+      switch_device_port: 22
+      pluggable:          True
+      connector:          SFP28
+      speeds:             [100, 1000, 10000, 25000]
+      tuning_type:        6400_25GPHY_0002
+      transceiver_bay_type: SFP_100M_1G_10G_25G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp48
+      capabilities:       [internal_prbs_loopback]
+

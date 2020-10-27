@@ -1,0 +1,337 @@
+# (c) Copyright 2019-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+
+# Ports description file for Aruba 6400 line module R0X42A
+
+manufacturer:    Aruba
+product_name:    6400 24p 10GT 4SFP56 Mod
+version:         '1'
+
+port_info:
+    number_ports:          28
+    max_port_speed:        50000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+
+ports:
+   -  name:               1
+      switch_device_port: 2
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               2
+      switch_device_port: 0
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               3
+      switch_device_port: 6
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               4
+      switch_device_port: 4
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               5
+      switch_device_port: 10
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               6
+      switch_device_port: 8
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               7
+      switch_device_port: 14
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               8
+      switch_device_port: 12
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               9
+      switch_device_port: 18
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               10
+      switch_device_port: 16
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               11
+      switch_device_port: 22
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               12
+      switch_device_port: 20
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               13
+      switch_device_port: 26
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               14
+      switch_device_port: 24
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               15
+      switch_device_port: 30
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               16
+      switch_device_port: 28
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               17
+      switch_device_port: 34
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               18
+      switch_device_port: 32
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               19
+      switch_device_port: 38
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               20
+      switch_device_port: 36
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               21
+      switch_device_port: 42
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               22
+      switch_device_port: 40
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               23
+      switch_device_port: 46
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               24
+      switch_device_port: 44
+      connector:          RJ45
+      description:        10G-SmartRate
+      speeds:             [100, 1000, 2500, 5000, 10000]
+      tuning_type:        6400_10GSR_0001
+      capabilities:
+          - cable_diagnostics
+          - internal_prbs_loopback
+          - speed_auto_only
+
+   -  name:               25
+      switch_device_port: 48
+      pluggable:          True
+      connector:          SFP56
+      speeds:             [1000, 10000, 25000, 50000]
+      selftest_speed:     25000
+      tuning_type:        6400_50GPHY_0001
+      transceiver_bay_type: SFP_1G_10G_25G_50G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp25
+      capabilities:       [internal_prbs_loopback]
+
+
+   -  name:               26
+      switch_device_port: 49
+      pluggable:          True
+      connector:          SFP56
+      speeds:             [1000, 10000, 25000, 50000]
+      selftest_speed:     25000
+      tuning_type:        6400_50GPHY_0001
+      transceiver_bay_type: SFP_1G_10G_25G_50G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp26
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               27
+      switch_device_port: 50
+      pluggable:          True
+      connector:          SFP56
+      speeds:             [1000, 10000, 25000, 50000]
+      selftest_speed:     25000
+      tuning_type:        6400_50GPHY_0001
+      transceiver_bay_type: SFP_1G_10G_25G_50G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp27
+      capabilities:       [internal_prbs_loopback]
+
+   -  name:               28
+      switch_device_port: 51
+      pluggable:          True
+      connector:          SFP56
+      speeds:             [1000, 10000, 25000, 50000]
+      selftest_speed:     25000
+      tuning_type:        6400_50GPHY_0001
+      transceiver_bay_type: SFP_1G_10G_25G_50G_ACCESS
+      pm_max_power:       2500
+      module_eeprom:      sfpp28
+      capabilities:       [internal_prbs_loopback]
+

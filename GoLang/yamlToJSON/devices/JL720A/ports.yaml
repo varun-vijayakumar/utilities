@@ -1,0 +1,544 @@
+# (c) Copyright 2019-2020 Hewlett Packard Enterprise Development LP
+# All Rights Reserved.
+#
+# The contents of this software are proprietary and confidential
+# to the Hewlett Packard Enterprise Development LP.  No part of this
+# program may be photocopied, reproduced, or translated into another
+# programming language without prior written consent of the
+# Hewlett Packard Enterprise Development LP.
+#
+# Port Description File for 8360 Fixed SKU JL720A
+
+manufacturer:    Aruba
+product_name:    8360-48XT4C switch
+version:         '1'
+
+port_info:
+    number_ports:          52
+    max_port_speed:        100000
+    max_transmission_unit: 9198
+    max_lag_count:         1024
+    max_lag_member_count:  256
+
+
+ports:
+    -  name:               1
+       switch_device_port: 50
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               2
+       switch_device_port: 51
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               3
+       switch_device_port: 48
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               4
+       switch_device_port: 49
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               5
+       switch_device_port: 46
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               6
+       switch_device_port: 47
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               7
+       switch_device_port: 44
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               8
+       switch_device_port: 45
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               9
+       switch_device_port: 38
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               10
+       switch_device_port: 39
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               11
+       switch_device_port: 36
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               12
+       switch_device_port: 37
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               13
+       switch_device_port: 42
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               14
+       switch_device_port: 43
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               15
+       switch_device_port: 40
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               16
+       switch_device_port: 41
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               17
+       switch_device_port: 34
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               18
+       switch_device_port: 35
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               19
+       switch_device_port: 32
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               20
+       switch_device_port: 33
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               21
+       switch_device_port: 30
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               22
+       switch_device_port: 31
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               23
+       switch_device_port: 28
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               24
+       switch_device_port: 29
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               25
+       switch_device_port: 26
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               26
+       switch_device_port: 27
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               27
+       switch_device_port: 24
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               28
+       switch_device_port: 25
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               29
+       switch_device_port: 22
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               30
+       switch_device_port: 23
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               31
+       switch_device_port: 20
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               32
+       switch_device_port: 21
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               33
+       switch_device_port: 1
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               34
+       switch_device_port: 0
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               35
+       switch_device_port: 3
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               36
+       switch_device_port: 2
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               37
+       switch_device_port: 5
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               38
+       switch_device_port: 4
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               39
+       switch_device_port: 7
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               40
+       switch_device_port: 6
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               41
+       switch_device_port: 9
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               42
+       switch_device_port: 8
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               43
+       switch_device_port: 11
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               44
+       switch_device_port: 10
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               45
+       switch_device_port: 13
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               46
+       switch_device_port: 12
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               47
+       switch_device_port: 15
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               48
+       switch_device_port: 14
+       connector:          RJ45
+       description:        10GbT
+       speeds:             [100, 1000, 10000]
+       capabilities:
+           - cable_diagnostics
+           - internal_prbs_loopback
+           - speed_auto_only
+
+    -  name:               49
+       switch_device_port: 17
+       pluggable:          True
+       connector:          QSFP28
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_NO_SPLIT
+       pm_max_power:       5000
+       module_eeprom:      qsfp1
+
+    -  name:               50
+       switch_device_port: 16
+       pluggable:          True
+       connector:          QSFP28
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_NO_SPLIT
+       pm_max_power:       5000
+       module_eeprom:      qsfp2
+
+    -  name:               51
+       switch_device_port: 18
+       pluggable:          True
+       connector:          QSFP28
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_NO_SPLIT
+       pm_max_power:       5000
+       module_eeprom:      qsfp3
+
+    -  name:               52
+       switch_device_port: 19
+       pluggable:          True
+       connector:          QSFP28
+       speeds:             [40000, 100000]
+       tuning_type:        8360_100G_0001
+       transceiver_bay_type: QSFP_40G_100G_DC_NO_SPLIT
+       pm_max_power:       5000
+       module_eeprom:      qsfp4
+
