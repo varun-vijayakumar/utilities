@@ -193,10 +193,10 @@ func checkIfFeatureDisabledOnTheDevice(featureList []string, uuid string, cncInf
 
 // InterfaceInfo interface map
 type InterfaceInfo struct {
-	PortInfo map[string]interface{}
+	PortsInfo map[string]interface{}
 }
 
-func process(value interface{}, portInfo map[string]interface{}) bool {
+func process(value interface{}, portInfo map[string]interface{}, portList map[string]interface{}) bool {
 	var speedMap map[string]interface{} = make(map[string]interface{})
 
 	switch value.(type) {
@@ -209,18 +209,18 @@ func process(value interface{}, portInfo map[string]interface{}) bool {
 	case []interface{}:
 		fmt.Printf("%v is a slice of interface \n ", value)
 		for _, v := range value.([]interface{}) {
-			process(v, portInfo)
+			process(v, portInfo, portList)
 		}
 	case map[string]interface{}:
 		fmt.Printf("%v is a map \n ", value)
 		for _, v := range value.(map[string]interface{}) {
-			process(v, portInfo)
+			process(v, portInfo, portList)
 		}
 	case map[interface{}]interface{}:
 		var curName = "1/1/"
 		var speedList interface{}
-		parentPortCount := portInfo["parent_port_count"].(int)
-		totalPortCount := portInfo["total_port_count"].(int)
+		parentPortCount := portInfo["port_count_parent"].(int)
+		totalPortCount := portInfo["port_count_total"].(int)
 		portInfo["ports"] = make(map[string][]interface{})
 
 		for k, v := range value.(map[interface{}]interface{}) {
@@ -241,9 +241,9 @@ func process(value interface{}, portInfo map[string]interface{}) bool {
 			portSpeeds = append(portSpeeds, strconv.Itoa(s.(int)))
 		}
 		speedMap["speeds"] = portSpeeds
-		portInfo[curName] = speedMap
-		portInfo["parent_port_count"] = parentPortCount
-		portInfo["total_port_count"] = totalPortCount
+		portList[curName] = speedMap
+		portInfo["port_count_parent"] = parentPortCount
+		portInfo["port_count_total"] = totalPortCount
 		// fmt.Println(parentPortCount)
 		// fmt.Println(totalPortCount)
 		return true
@@ -333,9 +333,11 @@ func extract(parentDirectory string, jNumber string) bool {
 	}
 
 	var portInfo map[string]interface{} = make(map[string]interface{})
-	portInfo["parent_port_count"] = 0
-	portInfo["total_port_count"] = 0
+	portInfo["jNumber"] = jNumber
+	portInfo["port_count_parent"] = 0
+	portInfo["port_count_total"] = 0
 	portInfoCount := 0
+	var portList map[string]interface{} = make(map[string]interface{})
 	ok2 := false
 	for k, v := range intfYamlMap {
 		if k == "ports" {
@@ -346,11 +348,12 @@ func extract(parentDirectory string, jNumber string) bool {
 			}
 			for _, port := range ports {
 				//fmt.Printf("type : %s\n", reflect.TypeOf(port))
-				if !process(port, portInfo) {
+				if !process(port, portInfo, portList) {
 					fmt.Println("Port Info Fetch Failed")
 					return false
 				}
 			}
+			portInfo["ports"] = portList
 		}
 		if k == "port_info" {
 			portInfo := v.(map[interface{}]interface{})
@@ -367,17 +370,17 @@ func extract(parentDirectory string, jNumber string) bool {
 		return false
 	}
 
-	totalPortCount := portInfo["total_port_count"].(int)
+	totalPortCount := portInfo["port_count_total"].(int)
 	if portInfoCount != totalPortCount {
-		log.Printf("number_ports %d and total_port_count %d mismatch in %s",
+		log.Printf("number_ports %d and port_count_total %d mismatch in %s",
 			portInfoCount, totalPortCount, intfYamlFile)
 		portInfoCount = totalPortCount
 	}
 
-	log.Printf("number_ports %d and total_port_count %d", portInfoCount, totalPortCount)
-	if portInfo["parent_port_count"].(int) == 0 {
-		portInfo["parent_port_count"] = portInfoCount
-		log.Printf("ParentPortCount is 0 , set to total_port_count %d\n", portInfo["parent_port_count"].(int))
+	log.Printf("number_ports %d and port_count_total %d", portInfoCount, totalPortCount)
+	if portInfo["port_count_parent"].(int) == 0 {
+		portInfo["port_count_parent"] = portInfoCount
+		log.Printf("ParentPortCount is 0 , set to port_count_total %d\n", portInfo["port_count_parent"].(int))
 	}
 
 	cncInfo := &InterfaceInfo{portInfo}
